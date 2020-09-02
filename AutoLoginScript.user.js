@@ -157,7 +157,8 @@ window.autoLogin.insertHTML = function() {
 <option value="internet" data-realm-type="0">internet</option>
 <option value="baoyue50" data-realm-type="0">baoyue</option>
 <option value="qgzx" data-realm-type="0">qgzxyh</option>
-<option value="qgzxby" data-realm-type="0">qgzxby</option>`
+<option value="qgzxby" data-realm-type="0">qgzxby</option>
+<option value="free-student" data-realm-type="0">free-student</option>`
 	);
 	//添加设置按钮
 	$('div.nav-bar ul').append(`<li><a href='javascript:window.autoLogin.switchSettingPanel()'>自动登录设置</a></li>`)
@@ -185,6 +186,7 @@ window.autoLogin.insertHTML = function() {
 					<option value="baoyue50" data-realm-type="0">baoyue</option>
 					<option value="qgzx" data-realm-type="0">qgzxyh</option>
 					<option value="qgzxby" data-realm-type="0">qgzxby</option>
+					<option value="free-student" data-realm-type="0">free-student</option>
 				</select>
 			</div>
 			<div class="input-group">
