@@ -8,7 +8,7 @@
 
 
 // @note         ================ 脚本维护人员招聘 ================ 脚本维护人员招聘  ================
-// @note         
+// @note
 // @note         因本人毕业，校外无法访问n.njcit.cn，故在此寻找能有能力接任自动登录脚本维护工作的学弟学妹。
 // @note         若您有这个能力，还请联系我的QQ：157970490（备注：校园网自动登录脚本维护）。
 // @note         如果您周围有相关的大佬，还请帮忙介绍。
@@ -37,7 +37,7 @@
 // @note         本人是2017年入学。某软件专业的关门弟子，刚刚填了毕业证邮寄的申请表，即将彻底和南信院说再见了。
 // @note         今年转本虽说扩招，但压根不关计算机类专业什么事，还是滑档了，征求平行志愿最后一个也是几乎压线被录取。
 // @note         也许，不该裸考的…… 哎，我太南了。
-// @note         
+// @note
 // @note         ================ 脚本维护人员招聘 ================ 脚本维护人员招聘  ================
 
 // @match        http://n.njcit.cn
@@ -153,15 +153,18 @@ window.autoLogin.insertHTML = function() {
 	$("option").remove();
 	$("#domain").append(
 `<option value="studentphone" data-realm-type="0">student-phone</option>
-<option value="phone" data-realm-type="0">phone</option>
 <option value="internet" data-realm-type="0">internet</option>
+<option value="student" data-realm-type="0">student</option>
 <option value="baoyue50" data-realm-type="0">baoyue</option>
 <option value="qgzx" data-realm-type="0">qgzxyh</option>
 <option value="qgzxby" data-realm-type="0">qgzxby</option>
-<option value="free-student" data-realm-type="0">free-student</option>`
+<option value="IoT" data-realm-type="0">教学大赛</option>
+<option value="freestudent" data-realm-type="0">free-student</option>
+`
 	);
 	//添加设置按钮
 	$('div.nav-bar ul').append(`<li><a href='javascript:window.autoLogin.switchSettingPanel()'>自动登录设置</a></li>`)
+    $('div.panel-body').append(`<p align=center>首次使用需手动登录</p>`)
 	//添加设置页面
 	$('div.mLeft').append(
 `<form id="loginFormForAutoLogin" style="display: none;">
@@ -178,15 +181,15 @@ window.autoLogin.insertHTML = function() {
 			</div>
 			<div class="input-group row-space">
 				<span class="input-group-addon">@</span>
-				<select id="domainForAutoLogin" name="domain" class="form-control">
+				<select id="domain" name="domain" class="form-control">
 					<option value="studentphone" data-realm-type="0">student-phone</option>
-					<option value="student" data-realm-type="0">student</option>
-					<option value="phone" data-realm-type="0">phone</option>
-					<option value="internet" data-realm-type="0">internet</option>
-					<option value="baoyue50" data-realm-type="0">baoyue</option>
-					<option value="qgzx" data-realm-type="0">qgzxyh</option>
-					<option value="qgzxby" data-realm-type="0">qgzxby</option>
-					<option value="free-student" data-realm-type="0">free-student</option>
+				       <option value="internet" data-realm-type="0">internet</option>
+				       <option value="student" data-realm-type="0">student</option>
+				       <option value="baoyue50" data-realm-type="0">baoyue</option>
+				       <option value="qgzx" data-realm-type="0">qgzxyh</option>
+				       <option value="qgzxby" data-realm-type="0">qgzxby</option>
+				       <option value="IoT" data-realm-type="0">教学大赛</option>
+				       <option value="freestudent" data-realm-type="0">free-student</option>
 				</select>
 			</div>
 			<div class="input-group">
