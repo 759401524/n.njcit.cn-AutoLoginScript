@@ -2,7 +2,7 @@
 自动登录南京信息职业技术学院校园网的浏览器用户脚本。
 
 # 食用:
-[AutoLoginScript.user.js](https://github.com/Preliterate/n.njcit.cn-AutoLoginScript/raw/master/AutoLoginScript.user.js)
+[AutoLoginScript.user.js](https://github.com/759401524/n.njcit.cn-AutoLoginScript/raw/beta/AutoLoginScript.user.js)
 
 * 浏览器安装TamperMonkey([Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo),[Edge Chromium](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd),[Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/))或者GreaseMonkey
 * 然后浏览器点击上方链接
